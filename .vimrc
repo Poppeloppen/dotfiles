@@ -88,4 +88,5 @@ set softtabstop=4
 set tabstop=4
 set smartindent
 
-
+" Auto source vimrc
+autocmd! BufWritePost $MYVIMRC source $MYVIMRC | echom "Reloaded $NVIMRC"
