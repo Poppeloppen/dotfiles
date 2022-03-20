@@ -24,3 +24,9 @@ alias h='history'
 
 #for logging onto itu server
 alias itu="sudo openfortivpn sslvpn.itu.dk -u vhen --trusted-cert dd28d02edb94131bd84151c6aeee8ab5a88969a65d99ed9efa46b4507d75fcef"
+
+
+#Testing
+save(){
+    cp ~/t.txt ~/dotfiles
+}
