@@ -90,3 +90,12 @@ set smartindent
 
 " Auto source vimrc
 autocmd! BufWritePost $MYVIMRC source $MYVIMRC | echom "Reloaded $NVIMRC"
+
+
+" For setting language to english
+set langmenu=en_US.UTF-8
+let $LANG = 'en_US.UTF-8'
+
+" Enabling omnicompletion (suggestions for programming)
+"set omnifunc=syntaxcomplete#Complete
+autocmd FileType python set omnifunc=python3complete#Complete
