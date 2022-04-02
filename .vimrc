@@ -99,3 +99,15 @@ let $LANG = 'en_US.UTF-8'
 " Enabling omnicompletion (suggestions for programming)
 "set omnifunc=syntaxcomplete#Complete
 autocmd FileType python set omnifunc=python3complete#Complete
+
+
+" For plugins
+call plug#begin()
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'git@github.com:Valloric/YouCompleteMe.git'
+call plug#end()
+
+" Apply the onehalfdark colorscheme (plugin)
+colorscheme onehalfdark
+
+
