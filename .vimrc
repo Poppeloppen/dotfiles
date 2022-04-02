@@ -104,10 +104,15 @@ autocmd FileType python set omnifunc=python3complete#Complete
 " For plugins
 call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'morhetz/gruvbox'
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 call plug#end()
 
 " Apply the onehalfdark colorscheme (plugin)
-colorscheme onehalfdark
+" colorscheme gruvbox
+
+
+" Apply the gruvbox  colorscheme (plugin)
+colorscheme gruvbox
 
 
