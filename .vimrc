@@ -114,12 +114,17 @@ Plug 'git@github.com:tpope/vim-commentary'
 call plug#end()
 
 " Apply the onehalfdark colorscheme (plugin)
-" colorscheme gruvbox
+" colorscheme onehalfdark
 
 
 " Apply the gruvbox  colorscheme (plugin)
 colorscheme gruvbox
 set bg=dark
+" Should fix the problem that gruvbox do not work in tmux
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen
+    set t_ut=
+endif
 
-
-
+set t_Co=256
