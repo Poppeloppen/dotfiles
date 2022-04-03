@@ -100,12 +100,17 @@ let $LANG = 'en_US.UTF-8'
 "set omnifunc=syntaxcomplete#Complete
 autocmd FileType python set omnifunc=python3complete#Complete
 
+" For easily switching between tabs
+nnoremap <Leader>H <C-w><Left>
+nnoremap <Leader>L <C-w><Right>
+
 
 " For plugins
 call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'morhetz/gruvbox'
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
+Plug 'git@github.com:tpope/vim-commentary'
 call plug#end()
 
 " Apply the onehalfdark colorscheme (plugin)
@@ -114,5 +119,7 @@ call plug#end()
 
 " Apply the gruvbox  colorscheme (plugin)
 colorscheme gruvbox
+set bg=dark
+
 
 
