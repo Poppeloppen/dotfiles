@@ -126,5 +126,7 @@ if &term =~ '256color'
     " work properly when Vim is used inside tmux and GNU screen
     set t_ut=
 endif
-
 set t_Co=256
+
+" Make sure that 'yanked' content can be pasted with cmd+v
+set clipboard=unnamed
