@@ -130,3 +130,10 @@ set t_Co=256
 
 " Make sure that 'yanked' content can be pasted with cmd+v
 set clipboard=unnamed
+
+
+" For local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+
+" For global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
